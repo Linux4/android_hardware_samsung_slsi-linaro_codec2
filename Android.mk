@@ -1,3 +1,4 @@
+ifeq ($(TARGET_SLSI_VARIANT),linaro)
 ifneq ($(filter exynos google, $(TARGET_SOC_NAME)),)
 LOCAL_PATH := $(call my-dir)
 
@@ -1242,5 +1243,6 @@ ifeq ($(shell expr $(PLATFORM_SDK_VERSION) \> 31), 1)
 include $(EXYNOS_CODEC2_TOP)/plugin/Android.mk
 endif
 
+endif
 endif
 endif
