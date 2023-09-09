@@ -1,0 +1,16 @@
+cc_library_headers {
+    name: "libexynosc2_gdc_headers",
+    proprietary: true,
+    compile_multilib: "both",
+    export_include_dirs: [
+        "./",
+    ],
+    header_libs: [
+        "libexynosc2_base_headers",
+        "libexynosc2_osal_headers",
+    ],
+    export_header_lib_headers: [
+        "libexynosc2_base_headers",
+        "libexynosc2_osal_headers",
+    ],
+}

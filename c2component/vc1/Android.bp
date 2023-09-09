@@ -1,0 +1,35 @@
+package {
+    default_applicable_licenses: [
+        "hardware_samsung_slsi_codec2_c2component_vc1_license",
+    ],
+}
+
+// Added automatically by a large-scale-change
+// See: http://go/android-license-faq
+license {
+    name: "hardware_samsung_slsi_codec2_c2component_vc1_license",
+    visibility: [":__subpackages__"],
+    license_kinds: [
+        "SPDX-license-identifier-Apache-2.0",
+    ],
+    license_text: [
+        "NOTICE",
+    ],
+}
+
+cc_library_headers {
+    name: "libexynosc2_vc1component_headers",
+    proprietary: true,
+    compile_multilib: "both",
+    export_include_dirs: [
+        "./",
+    ],
+    header_libs: [
+        "libexynosc2_component_headers",
+        "libexynosc2_vc1filter_headers",
+    ],
+    export_header_lib_headers: [
+        "libexynosc2_component_headers",
+        "libexynosc2_vc1filter_headers",
+    ],
+}
